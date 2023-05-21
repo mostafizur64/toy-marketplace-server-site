@@ -67,7 +67,6 @@ async function run() {
             const updateToys = req.body;
             const coffee = {
                 $set: {
-
                     price: updateToys.price,
                     quantity: updateToys.quantity,
                     description: updateToys.description,
