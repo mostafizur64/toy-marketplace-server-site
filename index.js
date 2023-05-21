@@ -46,7 +46,7 @@ async function run() {
             res.send(result)
 
         })
-        //specific data find 
+        //specific data find =
         app.get('/myToys', async (req, res) => {
             let query = {};
             if (req.query?.email) {
