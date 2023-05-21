@@ -33,7 +33,7 @@ async function run() {
         const addToysCollections = client.db('animalToys').collection('addToys')
 
 
-        //get All toys
+        //get All toys =
         app.get('/allToys', async (req, res) => {
             const result = await addToysCollections.find().toArray()
             res.send(result);
