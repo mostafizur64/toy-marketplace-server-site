@@ -121,7 +121,7 @@ async function run() {
   app.get('/shortAssending',async(req,res)=>{
     const cursor = addToysCollections.find().sort({price:1});
     const result = await cursor.toArray();
-    res.send(result)
+    res.send(result);
 
   })
   app.get('/shortDesending',async(req,res)=>{
