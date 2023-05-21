@@ -74,7 +74,7 @@ async function run() {
                     rating: updateToys.rating,
                 }
             }
-            const result = await addToysCollections.updateOne(filter, coffee, options)
+            const result = await addToysCollections.updateOne(filter, coffee, options);
             res.send(result);
         })
 
